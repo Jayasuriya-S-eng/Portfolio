@@ -157,3 +157,107 @@ footer{
 }
 
 }
+/* =========================================
+   CERTIFICATIONS SECTION
+========================================= */
+
+.certification-card {
+    border-radius: 20px;
+    overflow: hidden;
+    background: #ffffff;
+    transition: all 0.3s ease;
+}
+
+.certification-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15) !important;
+}
+
+
+/* Certificate Image Container */
+
+.certificate-image-wrapper {
+    width: 100%;
+    height: 360px;
+    background: #f8f9fa;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    overflow: hidden;
+}
+
+
+/* Certificate Image */
+
+.certificate-img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: contain;
+
+    padding: 15px;
+
+    transition: transform 0.3s ease;
+}
+
+
+/* Image Hover */
+
+.certification-card:hover .certificate-img {
+    transform: scale(1.03);
+}
+
+
+/* Certificate Title */
+
+.certification-card h3 {
+    font-size: 1.35rem;
+    margin-bottom: 15px;
+}
+
+
+/* Certificate Description */
+
+.certification-card p {
+    line-height: 1.6;
+}
+
+
+/* View Certificate Button */
+
+.certification-card .btn {
+    border-radius: 8px;
+
+    padding: 9px 20px;
+
+    margin-top: 5px;
+
+    transition: all 0.3s ease;
+}
+
+
+.certification-card .btn:hover {
+    transform: translateY(-2px);
+}
+
+
+/* Mobile */
+
+@media (max-width: 768px) {
+
+    .certificate-image-wrapper {
+        height: 300px;
+    }
+
+}
+
+
+@media (max-width: 576px) {
+
+    .certificate-image-wrapper {
+        height: 250px;
+    }
+
+}
